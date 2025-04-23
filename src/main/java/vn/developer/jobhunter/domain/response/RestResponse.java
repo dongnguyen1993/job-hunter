@@ -1,17 +1,18 @@
-package vn.developer.jobhunter.domain;
+package vn.developer.jobhunter.domain.response;
 
 public class RestResponse<T> {
-
-    private Object statusCode;
+    private int statusCode;
     private String error;
+
+    // message có thể là string, hoặc arrayList
     private Object message;
     private T data;
 
-    public Object getStatusCode() {
+    public int getStatusCode() {
         return statusCode;
     }
 
-    public void setStatusCode(Object statusCode) {
+    public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
 
